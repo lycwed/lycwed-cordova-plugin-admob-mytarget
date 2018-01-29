@@ -1,0 +1,31 @@
+{
+  "name": "lycwed-cordova-plugin-admob-mytarget",
+  "version": "1.0.0",
+  "description": "Cordova AdMob Mediation Plugin for MyTarget",
+  "scripts": {
+    "version": "sync-package-version --cordova-plugin"
+  },
+  "cordova": {
+    "id": "lycwed-cordova-plugin-admob-mytarget",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": "lycwed/lycwed-cordova-plugin-admob-mytarget",
+  "author": "Lycwed",
+  "license": "MIT",
+  "keywords": [
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "plugin",
+    "admob",
+    "mytarget",
+    "mediation"
+  ],
+  "bugs": {
+    "url": "https://github.com/lycwed/lycwed-cordova-plugin-admob-mytarget/issues"
+  },
+  "homepage": "https://github.com/lycwed/lycwed-cordova-plugin-admob-mytarget"
+}

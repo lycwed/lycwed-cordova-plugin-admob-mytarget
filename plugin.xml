@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="lycwed-cordova-plugin-admob-mytarget" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>lycwed-cordova-plugin-admob-mytarget</name>
+    <description>Cordova AdMob Mediation Plugin for MyTarget</description>
+
+    <engines>
+        <engine name="cordova" version=">=3" />
+    </engines>
+
+    <platform name="android">
+        <framework src="com.my.target:mytarget-sdk:4.7.2" />
+        <framework src="com.google.ads.mediation:mytarget:4.7.2.0" />
+
+        <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
+        <!-- when add additional mediation plugins -->
+        <dependency id="cordova-plugin-multidex" />
+    </platform>
+
+    <platform name="ios">
+        <pods-config ios-min-version="9.0" use-frameworks="true" />
+        <pod id="GoogleMobileAdsMediationMyTarget" version="4.7.2.0" />
+
+        <!-- Prevents compilation failures when using pod's id with additional mediations plugins -->
+        <dependency id="cordova-plugin-cocoapod-support" />
+    </platform>
+</plugin>
